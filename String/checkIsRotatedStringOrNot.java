@@ -3,10 +3,10 @@
 public class checkIsRotatedStringOrNot {
      public static void main(String[] args) {
         String s="abcd";
-        String rotated="cdab";
+        String rotated="cdad";
 
         int length=s.length();
-        if(s.charAt(length-1)==rotated.charAt(1)){
+        if((s.length()==rotated.length())&&(s+s).contains(rotated)){
             System.out.println("True");
         }
         else{

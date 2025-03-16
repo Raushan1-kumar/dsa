@@ -11,14 +11,12 @@ public class revertString {
             size++;
         }
        System.out.println("size is "+size);
-
        int start=0, end=size-1;
        while(start<size){
           reverse += s.charAt(end);
           start++;
           end--;
        }
-
        System.out.println(reverse);
     }
 }
