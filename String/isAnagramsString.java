@@ -27,7 +27,7 @@ public class isAnagramsString {
         String s1 = scanner.next();
         System.out.println("Enter second String");
         String s2 = scanner.next();
-
+        scanner.close();
         boolean ans = anagramString(s1,s2);
         if(ans==true){
             System.out.println("given strings are anagrams");

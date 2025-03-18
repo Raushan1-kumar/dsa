@@ -7,9 +7,8 @@ public class revertString {
         System.out.println("Enter any string");
         String s = scanner.next();
         String reverse="";
-        for(char c :s.toCharArray()){
-            size++;
-        }
+       size=s.length();
+        scanner.close();
        System.out.println("size is "+size);
        int start=0, end=size-1;
        while(start<size){

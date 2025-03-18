@@ -19,5 +19,6 @@ public class string2 {
         }
 
         System.out.println("Answer is " + ans);
+        scanner.close();
     }
 }

@@ -20,5 +20,6 @@ public class duplicateInString {
         System.out.println("Enter any string ");
         String s = scanner.next();
         duplicateCharacter(s);
+        scanner.close();
     }
 }

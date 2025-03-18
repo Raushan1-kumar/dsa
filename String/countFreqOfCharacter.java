@@ -39,6 +39,7 @@ public class countFreqOfCharacter {
         String s = scanner.next();
         countingFrequency(s);
         countingFrequency2(s);
+        scanner.close();
 
     }
 

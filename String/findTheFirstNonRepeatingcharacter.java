@@ -22,5 +22,6 @@ public class findTheFirstNonRepeatingcharacter {
         String s = scanner.next();
         char ans = firstUniqueChar(s);
         System.out.println(ans);
+        scanner.close();
     }
 }

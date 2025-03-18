@@ -8,6 +8,7 @@ public class palindrome {
         Boolean ans = true;
         int length = s.length();
         int start =0, end=length-1;
+        scanner.close();
 
         while (start<end) {
             if(s.charAt(start)!=s.charAt(end)){

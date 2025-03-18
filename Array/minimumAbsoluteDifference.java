@@ -17,7 +17,6 @@ public class minimumAbsoluteDifference{
                 minDiff= diff;
                 set.clear();
             }
-
             if(diff== minDiff){
                 set.add(Arrays.asList(arr[i-1], arr[i]));
             }

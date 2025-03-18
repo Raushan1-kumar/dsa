@@ -28,5 +28,6 @@ public class calculateVowelAndConsonant {
         System.out.println("Enter any string ");
         String s = scanner.next();
         countVowelAndConsonant(s);
+        scanner.close();
     }
 }

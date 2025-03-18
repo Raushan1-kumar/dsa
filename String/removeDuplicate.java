@@ -22,5 +22,6 @@ public class removeDuplicate {
         String s = scanner.next();
 
         uniqueOnly(s);
+        scanner.close();
     }
 }
