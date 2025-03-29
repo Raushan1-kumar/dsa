@@ -2,22 +2,19 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
 public class countFreqOfCharacter {
-
+    
     public static void countingFrequency(String s) {
-
         Map<Character, Integer> map = new HashMap<>();
-
         for (char c : s.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             System.out.print(entry.getKey() + ":" + entry.getValue()+" ");
         }
         System.out.println();
     }
-
     public static void countingFrequency2(String s) {
         int count = 0;
         char c = s.charAt(0);
@@ -32,7 +29,6 @@ public class countFreqOfCharacter {
         }
         System.out.println(c + ":" + count);
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter any string :");
@@ -42,5 +38,4 @@ public class countFreqOfCharacter {
         scanner.close();
 
     }
-
 }

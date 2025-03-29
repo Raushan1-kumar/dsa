@@ -5,8 +5,6 @@ public class calculateVowelAndConsonant {
         int consonant = 0;
         int specialCharacter = 0;
         int number = 0;
-
-    
         for (char c : a.toLowerCase().toCharArray()) {
             if ("aeiou".indexOf(c) != -1) {
                 vowel++;
