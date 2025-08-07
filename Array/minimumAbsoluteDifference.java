@@ -23,10 +23,8 @@ public class minimumAbsoluteDifference{
         }
     return set;
     }
-
-
     public static void main(String [] args){
-         int arr[] = {2,56,3,8,4,6};
+         int arr[] = {2,56,2,3,3,8,4,6};
          System.out.print(minimumDifference(arr));
     }
 }

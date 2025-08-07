@@ -24,19 +24,20 @@ public class maxSumSubarray {
     public static int maxSumMethod2(int [] arr, int k){
         int n = arr.length;
         int i=0, sum=0, maxSum=0;
-
-        for(int j=0; j<n; j++){
-            if(j-i+1 ==k){
-             sum +=arr[j];
-              maxSum = Math.max(maxSum, sum);
-              sum = sum-arr[i];
-              i++;
+        int j=0;
+        
+        while(j<n){
+             sum += arr[j];
+            if(j-i+1 < k){
+                j++;
             }
             else{
-                sum += arr[j];
+                maxSum= Math.max(sum, maxSum);
+                sum = sum-arr[i];
+                i++;
+                j++;
             }
         }
-
 
         return maxSum;
     }

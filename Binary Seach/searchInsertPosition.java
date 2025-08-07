@@ -17,17 +17,13 @@ public class searchInsertPosition {
             start++;
         }
     }
-
-
     if(insert==-1){
         return n;
     }
     return insert;
  }
-
-
-  public static void main(String[] args) {
-    int [] arr={3,4,6,6,33,34};
+ public static void main(String[] args) {
+    int [] arr={3,4,6,6,6,33,34};
     int key=6;
     System.out.println("The correct insert position will be -> "+(insertPosition(arr, key)));
   }

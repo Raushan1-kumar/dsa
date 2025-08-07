@@ -41,7 +41,7 @@ public class firstAndLastOccurrence {
 
     public static void main(String[] args) {
         int [] arr={2,2,2,3,4};
-        int key=25;
+        int key=2;
         firstandlast(arr, key);
     }
     

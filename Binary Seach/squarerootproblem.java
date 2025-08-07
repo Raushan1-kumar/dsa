@@ -22,7 +22,7 @@ public class squarerootproblem {
 
   public static void main(String[] args) {
     int [] arr={2,3,5,9};
-    int key=81;
+    int key=9;
     System.out.println(squareroot(arr, key));
   }
 }
