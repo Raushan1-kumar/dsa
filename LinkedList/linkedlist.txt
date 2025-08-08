@@ -1,0 +1,9 @@
+A Linked list is a dynamic , non -contigous linear data structure where each element (called a  node) contains
+data and a pointer (or reference) to the next node in the sequence . Unlike arrays, linked lists do not
+require a predefined size, allowing dynamic memory allocation.
+
+
+There are three types of Linked list
+1. Singly Linked list
+2. Doubly Linked list
+3. Circular Linked list
