@@ -101,7 +101,53 @@ public class AddElementinLL {
         return count;
     }
     
+    public static boolean isCircularLL(){
+        if(head == null){
+            return false;
+        }
+        if(head.next ==null){
+            return false;
+        }
+
+        Node curNode = head;
+        while(curNode.next !=null){
+              if(curNode.next==head){
+                return true;
+              }
+              curNode=curNode.next;
+        }
+        return false;
+    }
     
+  public static void addInMiddle() {
+    if (head == null || head.next == null) {
+        System.out.println("Not possible");
+        return;
+    }
+
+    Node newNode = new Node(23);
+    Node curr = head;
+    int count = 0;
+
+    // Count the number of nodes
+    while (curr != null) {
+        count++;
+        curr = curr.next;
+    }
+
+    // Reset to head
+    curr = head;
+
+    // Move to middle node (floor(count / 2) - 1 steps for 0-based index)
+    for (int i = 0; i < (count / 2) - 1; i++) {
+        curr = curr.next;
+    }
+
+    // Insert the new node after current
+    newNode.next = curr.next;
+    curr.next = newNode;
+}
+
     public static void main(String[] args) {
         addNodeatEnd(); // adds 3
         addNodeatEnd(); // adds another 3
@@ -111,7 +157,7 @@ public class AddElementinLL {
         printAllNode(); 
         deleteNodeAtFirst();
         printAllNode(); 
-        deleteNodeAtFirst();
+        
         System.out.println('d');
         printAllNode();
         System.out.println("the length of current linked list is "+lengthOfLL());
@@ -120,5 +166,12 @@ public class AddElementinLL {
         addNodeatEnd();
          System.out.println("the length of current linked list is "+lengthOfLL());
          printAllNode();
+        System.out.println(isCircularLL());
+        addInMiddle();
+        printAllNode();
+        System.out.println('h');
+           addInMiddle();
+        printAllNode();
     }
+    
 }
